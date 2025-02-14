@@ -11,7 +11,7 @@ using QuizApp.Domain.Data;
 namespace QuizApp.Migrations
 {
     [DbContext(typeof(QuizDbContext))]
-    [Migration("20250213132257_initialCreate")]
+    [Migration("20250214084337_initialCreate")]
     partial class initialCreate
     {
         /// <inheritdoc />
@@ -23,32 +23,6 @@ namespace QuizApp.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("QuizApp.Domain.Entity.Quiz", b =>
-                {
-                    b.Property<int>("QuestId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestId"));
-
-                    b.PrimitiveCollection<string>("Choices")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Question")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("TeacherId")
-                        .HasColumnType("int");
-
-                    b.HasKey("QuestId");
-
-                    b.HasIndex("TeacherId");
-
-                    b.ToTable("Quizzes");
-                });
 
             modelBuilder.Entity("QuizApp.Domain.Entity.Teacher", b =>
                 {
@@ -68,13 +42,50 @@ namespace QuizApp.Migrations
 
                     b.HasKey("TeachId");
 
-                    b.ToTable("Teachers");
+                    b.ToTable("Teacher");
                 });
 
-            modelBuilder.Entity("QuizApp.Domain.Entity.Quiz", b =>
+            modelBuilder.Entity("QuizApp.Domain.Entity.UserInfo", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("UserInfo");
+                });
+
+            modelBuilder.Entity("QuizApp.Domain.Entity.UserInfo", b =>
                 {
                     b.HasOne("QuizApp.Domain.Entity.Teacher", "Teacher")
-                        .WithMany("Quiz")
+                        .WithMany("UserInfo")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -84,7 +95,7 @@ namespace QuizApp.Migrations
 
             modelBuilder.Entity("QuizApp.Domain.Entity.Teacher", b =>
                 {
-                    b.Navigation("Quiz");
+                    b.Navigation("UserInfo");
                 });
 #pragma warning restore 612, 618
         }

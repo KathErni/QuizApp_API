@@ -9,6 +9,6 @@ namespace QuizApp.Domain.Entity
         public required string Username { get; set; }
         public required string Password { get; set; }
 
-        public ICollection<Quiz> Quiz { get; set; }
+        public ICollection<UserInfo> UserInfo{ get; set; }
     }
 }

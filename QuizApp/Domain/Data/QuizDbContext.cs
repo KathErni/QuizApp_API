@@ -8,8 +8,9 @@ namespace QuizApp.Domain.Data
     {
         public QuizDbContext(DbContextOptions<QuizDbContext> options) : base(options) { }
 
-        public DbSet<Quiz> Quizzes { get; set; }
-        public DbSet<Teacher>Teachers { get; set; }
+        public DbSet<UserInfo> Quizzes { get; set; }
+        public DbSet<UserInfo>Teachers { get; set; }
+        public DbSet<QuizApp.Domain.Entity.Teacher> Teacher { get; set; } = default!;
     }
 
     
