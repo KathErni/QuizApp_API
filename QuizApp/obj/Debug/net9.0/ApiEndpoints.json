@@ -1,124 +1,15 @@
 [
   {
-    "ContainingType": "QuizApp.Controllers.TeachersController",
-    "Method": "GetTeacher",
-    "RelativePath": "api/Teachers",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[QuizApp.Domain.Entity.Teacher, QuizApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "QuizApp.Controllers.TeachersController",
-    "Method": "PostTeacher",
-    "RelativePath": "api/Teachers",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "teacher",
-        "Type": "QuizApp.Domain.Entity.Teacher",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "QuizApp.Domain.Entity.Teacher",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "QuizApp.Controllers.TeachersController",
-    "Method": "GetTeacher",
-    "RelativePath": "api/Teachers/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "QuizApp.Domain.Entity.Teacher",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "QuizApp.Controllers.TeachersController",
-    "Method": "PutTeacher",
-    "RelativePath": "api/Teachers/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "teacher",
-        "Type": "QuizApp.Domain.Entity.Teacher",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuizApp.Controllers.TeachersController",
-    "Method": "DeleteTeacher",
-    "RelativePath": "api/Teachers/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "QuizApp.Controllers.UserInfosController",
+    "ContainingType": "QuizApp.Controllers.QuizzesController",
     "Method": "GetQuizzes",
-    "RelativePath": "api/UserInfos",
+    "RelativePath": "api/Quizzes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[QuizApp.Domain.Entity.UserInfo, QuizApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QuizApp.Domain.Entity.Quiz, QuizApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -129,22 +20,22 @@
     ]
   },
   {
-    "ContainingType": "QuizApp.Controllers.UserInfosController",
-    "Method": "PostUserInfo",
-    "RelativePath": "api/UserInfos",
+    "ContainingType": "QuizApp.Controllers.QuizzesController",
+    "Method": "PostQuiz",
+    "RelativePath": "api/Quizzes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userInfo",
-        "Type": "QuizApp.Domain.Entity.UserInfo",
+        "Name": "quiz",
+        "Type": "QuizApp.Domain.Entity.Quiz",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "QuizApp.Domain.Entity.UserInfo",
+        "Type": "QuizApp.Domain.Entity.Quiz",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -155,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "QuizApp.Controllers.UserInfosController",
-    "Method": "GetUserInfo",
-    "RelativePath": "api/UserInfos/{id}",
+    "ContainingType": "QuizApp.Controllers.QuizzesController",
+    "Method": "GetQuiz",
+    "RelativePath": "api/Quizzes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -170,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "QuizApp.Domain.Entity.UserInfo",
+        "Type": "QuizApp.Domain.Entity.Quiz",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -181,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "QuizApp.Controllers.UserInfosController",
-    "Method": "PutUserInfo",
-    "RelativePath": "api/UserInfos/{id}",
+    "ContainingType": "QuizApp.Controllers.QuizzesController",
+    "Method": "PutQuiz",
+    "RelativePath": "api/Quizzes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -194,17 +85,17 @@
         "IsRequired": true
       },
       {
-        "Name": "userInfo",
-        "Type": "QuizApp.Domain.Entity.UserInfo",
+        "Name": "quiz",
+        "Type": "QuizApp.Domain.Entity.Quiz",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "QuizApp.Controllers.UserInfosController",
-    "Method": "DeleteUserInfo",
-    "RelativePath": "api/UserInfos/{id}",
+    "ContainingType": "QuizApp.Controllers.QuizzesController",
+    "Method": "DeleteQuiz",
+    "RelativePath": "api/Quizzes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
