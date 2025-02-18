@@ -28,22 +28,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "quiz",
-        "Type": "QuizApp.Domain.Entity.Quiz",
+        "Name": "newQuiz",
+        "Type": "QuizApp.Domain.DTO.CreateQuestion",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "QuizApp.Domain.Entity.Quiz",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "QuizApp.Controllers.QuizzesController",
@@ -85,8 +75,8 @@
         "IsRequired": true
       },
       {
-        "Name": "quiz",
-        "Type": "QuizApp.Domain.Entity.Quiz",
+        "Name": "updateQuiz",
+        "Type": "QuizApp.Domain.DTO.CreateQuestion",
         "IsRequired": true
       }
     ],

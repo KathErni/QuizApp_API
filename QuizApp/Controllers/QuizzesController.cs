@@ -7,6 +7,7 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.DependencyResolver;
 using QuizApp.Domain.Data;
 using QuizApp.Domain.DTO;
 using QuizApp.Domain.Entity;
@@ -32,7 +33,8 @@ namespace QuizApp.Controllers
         public async Task<ActionResult<IEnumerable<Quiz>>> GetQuizzes()
         {
            var quiz = await _context.Quizzes.ToListAsync();
-            return Ok(quiz);
+            var quizDTO = _mapper.Map<List<QuestionDTO>>(quiz);
+            return Ok(quizDTO);
         }
 
         // GET: api/Quizzes/5
@@ -53,46 +55,36 @@ namespace QuizApp.Controllers
         // PUT: api/Quizzes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutQuiz(int id, Quiz quiz)
+        public async Task<IActionResult> PutQuiz(int id, [FromBody] CreateQuestion updateQuiz)
         {
-            if (id != quiz.QuizId)
+            var quiz = await _context.Quizzes.FindAsync(id);
+            if (quiz == null)
             {
-                return BadRequest();
+                return NotFound();
             }
+            _mapper.Map(updateQuiz, quiz);
+            var updatedQuiz = _context.Quizzes.Update(quiz).Entity;
+            var addedQuizDTO = _mapper.Map<QuestionDTO>(updatedQuiz);
+            var addedQuiz = await _context.SaveChangesAsync();
 
-            _context.Entry(quiz).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!QuizExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return Ok(addedQuiz);
         }
 
-        // POST: api/Quizzes
+       // POST: api/Quizzes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Quiz>> PostQuiz(Quiz quiz)
+        public async Task<ActionResult> PostQuiz([FromBody] CreateQuestion newQuiz)
         {
-            _context.Quizzes.Add(quiz);
+           var quiz= _mapper.Map<Quiz>(newQuiz);
+
+           var addedQuiz = _context.Quizzes.Add(quiz);
+            var addedQuizDTO = _mapper.Map<QuestionDTO>(addedQuiz.Entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetQuiz", new { id = quiz.QuizId }, quiz);
-        }
 
-        // DELETE: api/Quizzes/5
+            return CreatedAtAction(nameof(GetQuiz), new { id = addedQuizDTO.QuizId }, addedQuizDTO);
+        }
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuiz(int id)
         {
@@ -108,9 +100,6 @@ namespace QuizApp.Controllers
             return NoContent();
         }
 
-        private bool QuizExists(int id)
-        {
-            return _context.Quizzes.Any(e => e.QuizId == id);
-        }
+   
     }
 }
