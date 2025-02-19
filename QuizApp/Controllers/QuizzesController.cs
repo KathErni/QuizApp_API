@@ -55,7 +55,7 @@ namespace QuizApp.Controllers
         // PUT: api/Quizzes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutQuiz(int id, [FromBody] CreateQuestion updateQuiz)
+        public async Task<IActionResult> PutQuiz(int id, [FromBody] UpdateQuestion updateQuiz)
         {
             var quiz = await _context.Quizzes.FindAsync(id);
             if (quiz == null)

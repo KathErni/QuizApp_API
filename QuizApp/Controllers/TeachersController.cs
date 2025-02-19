@@ -1,112 +1,107 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Threading.Tasks;
-//using AutoMapper;
-//using Microsoft.AspNetCore.Http;
-//using Microsoft.AspNetCore.Mvc;
-//using Microsoft.EntityFrameworkCore;
-//using QuizApp.Domain.Data;
-//using QuizApp.Domain.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using QuizApp.Domain.Data;
+using QuizApp.Domain.DTO;
+using QuizApp.Domain.Entity;
 
-//namespace QuizApp.Controllers
-//{
-//    [Route("api/[controller]")]
-//    [ApiController]
-//    public class TeachersController : ControllerBase
-//    {
-//        private readonly QuizDbContext _context;
-       
+namespace QuizApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TeachersController : ControllerBase
+    {
+        private readonly QuizDbContext _context;
+        private readonly IMapper _mapper;
 
-//        public TeachersController(QuizDbContext context)
-//        {
-//            _context = context;
-//        }
 
-//        // GET: api/Teachers
-//        [HttpGet]
-//        public async Task<ActionResult<IEnumerable<Teacher>>> GetTeachers()
-//        {
-//            var teacher = await _context.Teachers.ToListAsync();
+        public TeachersController(QuizDbContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
 
-//            return Ok(teacher);
-//        }
+        // GET: api/Teachers
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Teacher>>> GetTeachers()
+        {
+            var teacher = await _context.Teachers.ToListAsync();
 
-//        // GET: api/Teachers/5
-//        [HttpGet("{id}")]
-//        public async Task<ActionResult<Teacher>> GetTeacher(int id)
-//        {
-//            var teacher = await _context.Teachers.FindAsync(id);
+            return Ok(teacher);
+        }
 
-//            if (teacher == null)
-//            {
-//                return NotFound();
-//            }
+        // GET: api/Teachers/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Teacher>> GetTeacher(int id)
+        {
+            var teacher = await _context.Teachers.FindAsync(id);
 
-//           return Ok(teacher);
-//        }
+            if (teacher == null)
+            {
+                return NotFound();
+            }
 
-//        // PUT: api/Teachers/5
-//        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-//        [HttpPut("{id}")]
-//        public async Task<IActionResult> PutTeacher(int id, Teacher teacher)
-//        {
-//            if (id != teacher.Id)
-//            {
-//                return BadRequest();
-//            }
+            return Ok(teacher);
+        }
 
-//            _context.Entry(teacher).State = EntityState.Modified;
+        // PUT: api/Teachers/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutTeacher(int id, [FromBody] UpdateTeacher updateTeacher)
+        {
+            var teacher = await _context.Quizzes.FindAsync(id);
+            if (teacher == null)
+            {
+                return NotFound();
+            }
+            _mapper.Map(updateTeacher, teacher);
+            var updatedTeacher = _context.Quizzes.Update(teacher).Entity;
+            var addedTeacherDto = _mapper.Map<TeacherDTO>(updatedTeacher);
+            var addedTeacher = await _context.SaveChangesAsync();
 
-//            try
-//            {
-//                await _context.SaveChangesAsync();
-//            }
-//            catch (DbUpdateConcurrencyException)
-//            {
-//                if (!TeacherExists(id))
-//                {
-//                    return NotFound();
-//                }
-//                else
-//                {
-//                    throw;
-//                }
-//            }
+            return Ok(addedTeacher);
+        }
 
-//            return NoContent();
-//        }
+        // POST: api/Teachers
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult> PostTeacher([FromBody] CreateTeacher newTeacher)
+        {
+            var teacher = _mapper.Map<Quiz>(newTeacher);
 
-//        // POST: api/Teachers
-//        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-//        [HttpPost]
-//        public async Task<ActionResult<Teacher>> PostTeacher(Teacher teacher)
-//        {
-//            _context.Teachers.Add(teacher);
-//            await _context.SaveChangesAsync();
+            var addedTeacher = _context.Quizzes.Add(teacher);
+            var addedTeacherDto = _mapper.Map<TeacherDTO>(addedTeacher.Entity);
+            await _context.SaveChangesAsync();
 
-//            return CreatedAtAction("GetTeacher", new { id = teacher.Id }, teacher);
-//        }
 
-//        // DELETE: api/Teachers/5
-//        [HttpDelete("{id}")]
-//        public async Task<IActionResult> DeleteTeacher(int id)
-//        {
-//            var teacher = await _context.Teachers.FindAsync(id);
-//            if (teacher == null)
-//            {
-//                return NotFound();
-//            }
+            return CreatedAtAction(nameof(GetTeacher), new { id = addedTeacherDto.Id }, addedTeacherDto);
+        }
 
-//            _context.Teachers.Remove(teacher);
-//            await _context.SaveChangesAsync();
 
-//            return NoContent();
-//        }
+        // DELETE: api/Teachers/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTeacher(int id)
+        {
+            var teacher = await _context.Teachers.FindAsync(id);
+            if (teacher == null)
+            {
+                return NotFound();
+            }
 
-//        private bool TeacherExists(int id)
-//        {
-//            return _context.Teachers.Any(e => e.Id == id);
-//        }
-//    }
-//}
+            _context.Teachers.Remove(teacher);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool TeacherExists(int id)
+        {
+            return _context.Teachers.Any(e => e.Id == id);
+        }
+    }
+}
