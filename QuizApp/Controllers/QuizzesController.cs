@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
-using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,7 +29,9 @@ namespace QuizApp.Controllers
 
         }
 
+
         // GET: api/Quizzes
+        [Authorize(Policy = "user")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Quiz>>> GetQuizzes()
         {
@@ -38,10 +41,11 @@ namespace QuizApp.Controllers
         }
 
         // GET: api/Quizzes/5
+        [Authorize(Policy = "user")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Quiz>> GetQuiz(int id)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
+            var quiz = await _context.Quizzes.Include(q => q.User).FirstOrDefaultAsync(q => q.QuizId == id);
 
             if (quiz == null)
             {
@@ -52,8 +56,9 @@ namespace QuizApp.Controllers
             return Ok(quizDTO);
         }
 
+
         // PUT: api/Quizzes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize(Policy = "admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutQuiz(int id, [FromBody] UpdateQuestion updateQuiz)
         {
@@ -70,21 +75,28 @@ namespace QuizApp.Controllers
             return Ok(addedQuiz);
         }
 
-       // POST: api/Quizzes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Quizzes
+        [Authorize(Policy = "admin")]
         [HttpPost]
         public async Task<ActionResult> PostQuiz([FromBody] CreateQuestion newQuiz)
         {
+            if (newQuiz == null)
+            {
+                return BadRequest();
+            }
+       
            var quiz= _mapper.Map<Quiz>(newQuiz);
 
-           var addedQuiz = _context.Quizzes.Add(quiz);
-            var addedQuizDTO = _mapper.Map<QuestionDTO>(addedQuiz.Entity);
+            await _context.Quizzes.AddAsync(quiz);
+
             await _context.SaveChangesAsync();
 
-
-            return CreatedAtAction(nameof(GetQuiz), new { id = addedQuizDTO.QuizId }, addedQuizDTO);
+            return CreatedAtAction(nameof(GetQuiz), new { Id = quiz.QuizId }, quiz);
+            
+           
         }
-        
+        //DELETE: api/Quizzes/5
+        [Authorize(Policy = "admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuiz(int id)
         {
@@ -99,6 +111,7 @@ namespace QuizApp.Controllers
 
             return NoContent();
         }
+
 
    
     }

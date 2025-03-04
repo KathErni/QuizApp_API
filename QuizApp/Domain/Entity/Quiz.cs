@@ -12,10 +12,9 @@ namespace QuizApp.Domain.Entity
 
         public required string Answer { get; set; }
 
-        //        [ForeignKey("Teacher")]
-        //        public int TeacherId { get; set; }
+        [ForeignKey(nameof(User))]
+        public int CreatedBy { get; set; }
 
-        //        public required Teacher Teacher { get; set; }
-        //    }
+        public User User { get; set; }
     }
 }

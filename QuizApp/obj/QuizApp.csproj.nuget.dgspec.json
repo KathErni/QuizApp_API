@@ -54,9 +54,9 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "Mapster": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[7.4.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -97,6 +97,10 @@
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
               "version": "[7.2.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.6.0, )"
             }
           },
           "imports": [

@@ -4,6 +4,8 @@
     {
         public required string Question { get; init; }
         public required string Answer { get; init; }
+
+        public required int CreatedBy { get; init; }
     }
 
     public record UpdateQuestion
@@ -24,6 +26,8 @@
         public required string Question { get; set; }
 
         public required string Answer { get; set; }
+
+        public required int CreatedBy { get; init; }
 
     }
 }

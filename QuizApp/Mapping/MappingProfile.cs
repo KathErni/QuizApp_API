@@ -12,7 +12,7 @@ namespace QuizApp.Mapping
             CreateMap<CreateQuestion, Quiz>();   
             CreateMap<UpdateQuestion, Quiz>();   
             CreateMap<DeleteQuestion, Quiz>();
-        
+
         }
     }
 }

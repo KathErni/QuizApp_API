@@ -287,8 +287,6 @@ C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\AutoMapper.dl
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Humanizer.dll
-C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Mapster.dll
-C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Mapster.Core.dll
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -545,3 +543,4 @@ C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\obj\Debug\net9.0\refint\QuizAp
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\obj\Debug\net9.0\QuizApp.pdb
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\obj\Debug\net9.0\QuizApp.genruntimeconfig.cache
 C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\obj\Debug\net9.0\ref\QuizApp.dll
+C:\Users\extmokt\Source\Repos\QuizApp_API\QuizApp\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
