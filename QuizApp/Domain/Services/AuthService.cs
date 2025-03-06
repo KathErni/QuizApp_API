@@ -24,7 +24,7 @@ namespace QuizApp.Domain.Services
             _configuration = configuration;
 
         }
-        public async Task<User?> AuthenticateById(int id)
+        public async Task<User?> GetUserById(int id)
         {
             var user = await _context.Users.FindAsync(id);
             if (user == null)
@@ -63,26 +63,28 @@ namespace QuizApp.Domain.Services
             return CreateToken(user);
         }
 
-        public async Task<User?> RegisterAsync(CreateUser request)
+        public async Task<bool> RegisterAsync(CreateUser request)
         {
-         //If user exist, return null
-            if(await _context.Users.AnyAsync(u => u.Username == request.Username))
+            
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == request.Username);
+            if (user == null)
             {
-                return null;
+                var newUser = new User();
+                var hashedPass = new PasswordHasher<User>()
+                    .HashPassword(newUser, request.Password);
+
+                newUser.Username = request.Username;
+                newUser.HashedPassword = hashedPass;
+                newUser.Role = request.Role.ToLower();
+
+                _context.Add(newUser);
+                await _context.SaveChangesAsync();
+                return true;
             }
 
-            var user = new User();
-            var hashedPass = new PasswordHasher<User>()
-                .HashPassword(user, request.Password);
 
-            user.Username = request.Username;
-            user.HashedPassword = hashedPass;
-            user.Role = request.Role.ToLower();
 
-            _context.Add(user);
-            await _context.SaveChangesAsync();
-
-            return user;
+            return false ;
         }
 
         public async Task<User?> UserEdit(int id, CreateUser request)

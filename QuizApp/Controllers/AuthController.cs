@@ -19,37 +19,22 @@ namespace QuizApp.Controllers
     public class AuthController(IAuthService authService) : ControllerBase
     {
 
-        //REGISTER: Auth/register
+        //REGISTER: api/Auth/register
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register(CreateUser request)
         {
-            var user = await authService.RegisterAsync(request);
-            if (user is null)
+            var userCreated = await authService.RegisterAsync(request);
+            if (!userCreated)
             {
                 return BadRequest("User already exists.");
             }
 
-            return Ok(user);
+            return Ok(userCreated);
         }
 
-        [HttpPut("login/edit/{id}")]
-        public async Task<ActionResult<User>> UserEdit(int id, [FromBody] CreateUser request)
-        {
-            var user = await authService.UserEdit(id, request);
-            if(user == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(user);
-            
-        }
-
-
-
-        //LOGIN: Auth/login
+        //LOGIN: api/Auth/login
         [HttpPost("login")]
-        public async Task<ActionResult<string>> Login(userDTO request)
+        public async Task<ActionResult<LoginDto>> Login(userDTO request)
         {
             var token = await authService.LoginAsync(request);
 
@@ -57,15 +42,18 @@ namespace QuizApp.Controllers
             {
                 return BadRequest("Invalid Username or Password.");
             }
-            return Ok(token);
+            var result = new LoginDto { Token = token };
+            return Ok(result);
         }
 
-        //AUTHENTICATION BY ID: Auth/user/3
+
+
+        //AUTHENTICATION BY ID: api/Auth/user/3
         [Authorize(Policy = "admin")]
         [HttpGet("user/{id}")]
-        public async Task<ActionResult<User>> AuthenticateById(int id)
+        public async Task<ActionResult<User>> GetUserById(int id)
         {
-            var user = await authService.AuthenticateById(id);
+            var user = await authService.GetUserById(id);
             if (user is null)
             {
                 return BadRequest("User does not exist or you are not authorized to access this feature.");
@@ -73,7 +61,22 @@ namespace QuizApp.Controllers
             return Ok(user);
         }
 
-        //DELETE: Auth/user/3
+        //EditUserID: api/Auth/login/edit/4
+        [Authorize(Policy = "admin")]
+        [HttpPut("login/edit/{id}")]
+        public async Task<ActionResult<User>> UserEdit(int id, [FromBody] CreateUser request)
+        {
+            var user = await authService.UserEdit(id, request);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
+
+        }
+
+        //DELETE: api/Auth/user/3
         [Authorize(Policy = "admin")]
         [HttpDelete("user/{id}")]
         public async Task<ActionResult<User>> DeleteUser(int id)
@@ -85,7 +88,8 @@ namespace QuizApp.Controllers
             }
             return Ok(user);
         }
-        //TEST
+
+        //TEST AREA
         [Authorize(Policy = "user")]
         [HttpGet]
         //Authenticated Users Only 

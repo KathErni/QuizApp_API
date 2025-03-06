@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\controllers\\quizzescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\controllers\\quizzescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\controllers\\quizzescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\controllers\\quizzescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\data\\quizdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\data\\quizdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\entity\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\entity\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -27,36 +55,8 @@
       "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\entity\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\entity\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\data\\quizdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\data\\quizdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\domain\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\domain\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304051154_changeidname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuizApp\\Migrations\\20250304051154_changeidname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|c:\\users\\extmokt\\source\\repos\\quizapp_api\\quizapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A38E7E5-3BF7-45C1-833A-18A608DBAE0B}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304050415_changedFK.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Entity\\User.cs",
               "RelativeDocumentMoniker": "QuizApp\\Domain\\Entity\\User.cs",
@@ -99,8 +99,7 @@
               "ViewState": "AgIAAAIAAAAAAAAAAAAUwA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T12:54:50.966Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -116,20 +115,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250304051331_initial.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304051331_initial.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Migrations\\20250304051331_initial.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304051331_initial.cs",
-              "RelativeToolTip": "QuizApp\\Migrations\\20250304051331_initial.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "QuizzesController.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\QuizzesController.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Controllers\\QuizzesController.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\QuizzesController.cs",
+              "RelativeToolTip": "QuizApp\\Controllers\\QuizzesController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAD4vysAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T05:13:32.048Z",
+              "WhenOpened": "2025-02-17T02:44:04.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "QuizApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:24:57.351Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Domain\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\AuthService.cs",
+              "RelativeToolTip": "QuizApp\\Domain\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T03:58:11.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Program.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Program.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Program.cs",
+              "RelativeToolTip": "QuizApp\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T13:04:39.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "QuizApp\\appsettings.Development.json",
@@ -137,77 +172,59 @@
               "RelativeToolTip": "QuizApp\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-13T13:08:28.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T13:08:28.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuizzesController.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\QuizzesController.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Controllers\\QuizzesController.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\QuizzesController.cs",
-              "RelativeToolTip": "QuizApp\\Controllers\\QuizzesController.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAuwCsAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Domain\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\IAuthService.cs",
+              "RelativeToolTip": "QuizApp\\Domain\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T02:44:04.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T03:57:40.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "QuizApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswGQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T02:24:57.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Mapping\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Mapping\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Mapping\\MappingProfile.cs",
-              "RelativeToolTip": "QuizApp\\Mapping\\MappingProfile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:21:12.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Quiz.cs",
               "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Entity\\Quiz.cs",
               "RelativeDocumentMoniker": "QuizApp\\Domain\\Entity\\Quiz.cs",
               "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Entity\\Quiz.cs",
               "RelativeToolTip": "QuizApp\\Domain\\Entity\\Quiz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T01:18:32.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T01:18:32.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "userDTO.cs",
               "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\DTO\\userDTO.cs",
               "RelativeDocumentMoniker": "QuizApp\\Domain\\DTO\\userDTO.cs",
               "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\DTO\\userDTO.cs",
               "RelativeToolTip": "QuizApp\\Domain\\DTO\\userDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T02:45:24.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T02:45:24.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "QuizDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Data\\QuizDbContext.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Domain\\Data\\QuizDbContext.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Data\\QuizDbContext.cs",
+              "RelativeToolTip": "QuizApp\\Domain\\Data\\QuizDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T12:59:14.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "questionDTO.cs",
               "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\DTO\\questionDTO.cs",
               "RelativeDocumentMoniker": "QuizApp\\Domain\\DTO\\questionDTO.cs",
@@ -215,51 +232,35 @@
               "RelativeToolTip": "QuizApp\\Domain\\DTO\\questionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T02:41:14.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "QuizDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Data\\QuizDbContext.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Domain\\Data\\QuizDbContext.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Data\\QuizDbContext.cs",
-              "RelativeToolTip": "QuizApp\\Domain\\Data\\QuizDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T12:59:14.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Domain\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\AuthService.cs",
-              "RelativeToolTip": "QuizApp\\Domain\\Services\\AuthService.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAqwGMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:58:11.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T02:41:14.19Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\IAuthService.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Domain\\Services\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Domain\\Services\\IAuthService.cs",
-              "RelativeToolTip": "QuizApp\\Domain\\Services\\IAuthService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAcAAAAtAAAAAAAAAA==",
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "QuizApp\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T03:57:40.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T03:21:12.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
+              "Title": "20250304051331_initial.cs",
+              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304051331_initial.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Migrations\\20250304051331_initial.cs",
+              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304051331_initial.cs",
+              "RelativeToolTip": "QuizApp\\Migrations\\20250304051331_initial.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T05:13:32.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "20250304051154_changeidname.cs",
               "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Migrations\\20250304051154_changeidname.cs",
               "RelativeDocumentMoniker": "QuizApp\\Migrations\\20250304051154_changeidname.cs",
@@ -268,18 +269,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T05:11:54.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Program.cs",
-              "RelativeDocumentMoniker": "QuizApp\\Program.cs",
-              "ToolTip": "C:\\Users\\extmokt\\source\\repos\\QuizApp_API\\QuizApp\\Program.cs",
-              "RelativeToolTip": "QuizApp\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T13:04:39.267Z"
             },
             {
               "$type": "Document",

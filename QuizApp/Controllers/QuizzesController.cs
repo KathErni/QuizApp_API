@@ -31,7 +31,7 @@ namespace QuizApp.Controllers
 
 
         // GET: api/Quizzes
-        [Authorize(Policy = "user")]
+        [Authorize(Policy = "admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Quiz>>> GetQuizzes()
         {
@@ -41,7 +41,7 @@ namespace QuizApp.Controllers
         }
 
         // GET: api/Quizzes/5
-        [Authorize(Policy = "user")]
+        [Authorize(Policy = "admin")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Quiz>> GetQuiz(int id)
         {
@@ -72,7 +72,7 @@ namespace QuizApp.Controllers
             var addedQuizDTO = _mapper.Map<QuestionDTO>(updatedQuiz);
             var addedQuiz = await _context.SaveChangesAsync();
 
-            return Ok(addedQuiz);
+            return Ok("Question updated!");
         }
 
         // POST: api/Quizzes
@@ -109,7 +109,7 @@ namespace QuizApp.Controllers
             _context.Quizzes.Remove(quiz);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok("Question Deleted!");
         }
 
 
